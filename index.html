@@ -1,0 +1,1134 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Menna Allah El-Sayed - Aspiring DevOps Engineer Portfolio. Certified in CCNA (97%), Cloud Essentials (90.5%), ITI Network Fundamentals (108 Hrs), and AWS ML.">
+  <meta name="keywords" content="DevOps, Cloud, Networking, CCNA, NTI, ITI, AWS, Machine Learning, Python, PHP, Menna Allah El-Sayed, Portfolio">
+  <meta name="author" content="Menna Allah El-Sayed Abd El-Salam">
+  <meta name="theme-color" content="#0b0f19">
+
+  <title>Menna Allah El-Sayed | Aspiring DevOps Engineer</title>
+
+  <!-- Google Fonts Preconnect & Stylesheets (Inter, Poppins, Cairo, Tajawal) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@500;600;700;800&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+  <!-- Core & RTL Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/rtl.css">
+</head>
+<body>
+
+  <!-- Accessible Skip Link -->
+  <a href="#main-content" class="skip-link" data-i18n="skipLink">Skip to Main Content</a>
+
+  <!-- =========================================================================
+       1. Header & Navigation Bar
+       ========================================================================= -->
+  <header class="site-header" id="site-header">
+    <div class="container navbar">
+      
+      <!-- Brand Logo -->
+      <a href="#hero" class="nav-brand" aria-label="Menna Allah El-Sayed Portfolio">
+        <div class="brand-icon">M</div>
+        <span class="brand-name" data-i18n="navLogo">Menna El-Sayed</span>
+      </a>
+
+      <!-- Desktop & Mobile Navigation Links -->
+      <nav class="nav-links" id="nav-links" aria-label="Primary Navigation">
+        <a href="#about" class="nav-link" data-i18n="navAbout">About</a>
+        <a href="#education" class="nav-link" data-i18n="navEducation">Education & Certs</a>
+        <a href="#projects" class="nav-link" data-i18n="navProjects">Projects</a>
+        <a href="#skills" class="nav-link" data-i18n="navSkills">Skills</a>
+        <a href="#contact" class="nav-link" data-i18n="navContact">Contact</a>
+      </nav>
+
+      <!-- Action Controls (Socials, Language, Theme, Mobile Hamburger) -->
+      <div class="nav-controls">
+        
+        <!-- Header Social Links -->
+        <div class="nav-socials-group">
+          <a href="https://github.com/menahanoon512006-spec" target="_blank" rel="noopener" class="nav-social-btn" title="GitHub Profile" aria-label="GitHub Profile">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path>
+            </svg>
+          </a>
+
+          <a href="https://www.linkedin.com/in/menna-elsayed-434aa135b" target="_blank" rel="noopener" class="nav-social-btn" title="LinkedIn Profile" aria-label="LinkedIn Profile">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"></path>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Language Switcher Button -->
+        <button class="lang-toggle-btn" id="lang-toggle-btn" aria-label="Switch Language" title="Switch Language">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="2" y1="12" x2="22" y2="12"></line>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+          </svg>
+          <span class="lang-label">العربية</span>
+        </button>
+
+        <!-- Theme Switcher Button (Dark / Light) -->
+        <button class="theme-toggle-btn" id="theme-toggle-btn" aria-label="Toggle Theme" title="Toggle Theme">
+          <svg class="theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="theme-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Mobile Drawer Hamburger Toggle -->
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Open Navigation Menu" aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       Main Content Container
+       ========================================================================= -->
+  <main id="main-content">
+
+    <!-- =======================================================================
+         2. Hero Section
+         ======================================================================= -->
+    <section class="section hero-section" id="hero">
+      <div class="container hero-grid">
+        
+        <!-- Hero Introduction Content -->
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="badge-pulse"></span>
+            <span data-i18n="heroBadge">Available for Opportunities</span>
+          </div>
+
+          <div class="hero-greeting" data-i18n="heroGreeting">Hi, I'm</div>
+          <h1 class="hero-title gradient-text" data-i18n="heroName">Menna Allah El-Sayed</h1>
+          <h2 class="hero-subtitle" data-i18n="heroTitle">Aspiring DevOps Engineer</h2>
+
+          <p class="hero-summary" data-i18n="heroSummary">
+            Information Technology student with a strong foundation in networking, cloud computing, and machine learning. Certified by NTI (CCNA 97%, Cloud Essentials 90.5%) and ITI (Network Fundamentals). Passionate about automating infrastructure, building resilient CI/CD pipelines, and bridging software engineering with cloud operations.
+          </p>
+
+          <!-- Primary Call-to-Action Buttons -->
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              <span data-i18n="heroBtnProjects">View Projects</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="arrow-icon">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+
+            <a href="#contact" class="btn btn-secondary" data-i18n="heroBtnContact">Contact Me</a>
+
+            <a href="assets/cv/Menna_Allah_ElSayed_CV.html" target="_blank" rel="noopener" class="btn btn-outline">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              <span data-i18n="heroBtnCV">Download CV</span>
+            </a>
+          </div>
+
+          <!-- Social & Contact Quick Links -->
+          <div class="hero-socials">
+            <a href="https://github.com/menahanoon512006-spec" target="_blank" rel="noopener" class="social-link" title="GitHub Profile" aria-label="GitHub Profile">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path>
+              </svg>
+            </a>
+
+            <a href="https://www.linkedin.com/in/menna-elsayed-434aa135b" target="_blank" rel="noopener" class="social-link" title="LinkedIn Profile" aria-label="LinkedIn Profile">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"></path>
+              </svg>
+            </a>
+
+            <a href="mailto:menahanoon512006@gmail.com" class="social-link" title="Email Menna" aria-label="Email Menna">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </a>
+
+            <a href="tel:01205963008" class="social-link" title="Call Menna" aria-label="Call Menna">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Interactive Terminal Component (DevOps Polish) -->
+        <div class="hero-visual">
+          <div class="terminal-card">
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span class="terminal-dot dot-red"></span>
+                <span class="terminal-dot dot-yellow"></span>
+                <span class="terminal-dot dot-green"></span>
+              </div>
+              <div class="terminal-title" data-i18n="terminalTitle">devops-engineer@menna-portfolio:~</div>
+              <div style="width: 30px;"></div>
+            </div>
+
+            <div class="terminal-body">
+              <div class="terminal-cmd">
+                <span class="terminal-prompt">$</span>
+                <span>cat engineer_profile.yaml</span>
+              </div>
+
+              <div class="terminal-info-row">
+                <span class="info-label" data-i18n="terminalRoleLabel">Role:</span>
+                <span class="info-value" data-i18n="terminalRoleValue">Aspiring DevOps & Cloud Engineer</span>
+              </div>
+
+              <div class="terminal-info-row">
+                <span class="info-label" data-i18n="terminalFocusLabel">Core Focus:</span>
+                <span class="info-value" data-i18n="terminalFocusValue">Cloud Infrastructure, Networking & Automation</span>
+              </div>
+
+              <div class="terminal-info-row">
+                <span class="info-label" data-i18n="terminalStatusLabel">Status:</span>
+                <span class="info-value" style="color: #10b981;" data-i18n="terminalStatusValue">Certified: CCNA (97%) • Cloud (90.5%) • ITI (108h)</span>
+              </div>
+
+              <div class="terminal-info-row">
+                <span class="info-label" data-i18n="terminalReadyLabel">Target:</span>
+                <span class="info-value" data-i18n="terminalReadyValue">CI/CD • Linux • AWS • Docker • Networking</span>
+              </div>
+
+              <div class="terminal-pipeline">
+                <div class="pipeline-title">Continuous Integration & Deployment Pipeline</div>
+                <div class="pipeline-steps">
+                  <span class="pipeline-step">✓ Code (Git)</span>
+                  <span class="pipeline-arrow">→</span>
+                  <span class="pipeline-step">✓ Build (Docker)</span>
+                  <span class="pipeline-arrow">→</span>
+                  <span class="pipeline-step">✓ Test (Automated)</span>
+                  <span class="pipeline-arrow">→</span>
+                  <span class="pipeline-step">🚀 Deploy (Cloud)</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         3. About Me Section
+         ======================================================================= -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tag" data-i18n="aboutSectionTag">Get to know me</span>
+          <h2 class="section-title" data-i18n="aboutTitle">About Me</h2>
+          <p class="section-subtitle" data-i18n="aboutSubtitle">
+            Fusing networking foundations, cloud knowledge, and programming to architect scalable DevOps workflows.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          
+          <!-- Narrative and Key Numbers -->
+          <div class="about-text">
+            <p data-i18n="aboutBio1">
+              I am an Information Technology student at Arish University with an avid passion for infrastructure engineering, cloud architectures, and automation. Through rigorous hands-on technical training with Egypt's leading institutes—NTI, DEPI, and ITI—I have developed a holistic understanding of how systems communicate, scale, and deliver value.
+            </p>
+            
+            <p data-i18n="aboutBio2">
+              My certifications include CCNA - Routing & Switching with an outstanding 97% score, Cloud Essentials with 90.5% from NTI & ITIDA, and ITI's 108-hour Computer Network Fundamentals program. Combining network engineering, AWS cloud expertise, and machine learning pipelines, my goal is to build automated, highly available, and reliable cloud environments as a DevOps Engineer.
+            </p>
+
+            <!-- Key Metric Stat Badges -->
+            <div class="stats-grid">
+              <div class="stat-card">
+                <div class="stat-number" data-i18n="statCerts">4+</div>
+                <div class="stat-label" data-i18n="statCertsLabel">Certifications & Tracks</div>
+              </div>
+
+              <div class="stat-card">
+                <div class="stat-number" data-i18n="statProjects">3+</div>
+                <div class="stat-label" data-i18n="statProjectsLabel">Key Engineering Projects</div>
+              </div>
+
+              <div class="stat-card">
+                <div class="stat-number" data-i18n="statFocus">100%</div>
+                <div class="stat-label" data-i18n="statFocusLabel">Commitment to DevOps</div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Technical Pillars Cards -->
+          <div class="pillars-grid">
+            
+            <!-- Pillar 1: DevOps & Cloud -->
+            <div class="pillar-card">
+              <div class="pillar-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"></path>
+                </svg>
+              </div>
+              <div class="pillar-content">
+                <h3 data-i18n="pillarDevopsTitle">DevOps & Cloud</h3>
+                <p data-i18n="pillarDevopsDesc">Building cloud computing skills across AWS and foundational cloud platforms with an emphasis on automated systems, virtualization, and deployment.</p>
+              </div>
+            </div>
+
+            <!-- Pillar 2: Networking & CCNA -->
+            <div class="pillar-card">
+              <div class="pillar-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                  <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                  <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                  <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                </svg>
+              </div>
+              <div class="pillar-content">
+                <h3 data-i18n="pillarNetworkingTitle">Networking & CCNA</h3>
+                <p data-i18n="pillarNetworkingDesc">Deep understanding of networking architectures, routing protocols, subnetting, switching, and secure infrastructure topologies (Score: 97%).</p>
+              </div>
+            </div>
+
+            <!-- Pillar 3: Applied Machine Learning -->
+            <div class="pillar-card">
+              <div class="pillar-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2a4 4 0 0 1 4 4c0 1.95-1.4 3.58-3.25 3.93L15 15l4-2a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2l4 2 2.25-5.07A4.002 4.002 0 0 1 8 6a4 4 0 0 1 4-4z"></path>
+                </svg>
+              </div>
+              <div class="pillar-content">
+                <h3 data-i18n="pillarMlTitle">Applied Machine Learning</h3>
+                <p data-i18n="pillarMlDesc">Hands-on experience processing datasets and training ML models with Python, pandas, and scikit-learn on real-world datasets.</p>
+              </div>
+            </div>
+
+            <!-- Pillar 4: Full-Stack Integration -->
+            <div class="pillar-card">
+              <div class="pillar-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <div class="pillar-content">
+                <h3 data-i18n="pillarWebTitle">Full-Stack Integration</h3>
+                <p data-i18n="pillarWebDesc">Experience designing backend RESTful APIs with PHP and creating responsive, intuitive frontend user interfaces.</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         4. Education & Certifications Section
+         ======================================================================= -->
+    <section class="section edu-section" id="education">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tag" data-i18n="eduSectionTag">Academic & Professional Growth</span>
+          <h2 class="section-title" data-i18n="eduTitle">Education & Certifications</h2>
+          <p class="section-subtitle" data-i18n="eduSubtitle">
+            Official accredited certifications and specialized industry training programs.
+          </p>
+        </div>
+
+        <div class="edu-timeline">
+          
+          <!-- Official Cert 1: CCNA Routing and Switching (NTI - 97%) -->
+          <div class="edu-card">
+            <div class="edu-icon-badge">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+              </svg>
+            </div>
+            <div class="edu-details">
+              <div class="edu-header">
+                <h3 class="edu-title" data-i18n="certCcnaTitle">CCNA - Routing and Switching</h3>
+                <span class="edu-date-badge" data-i18n="certCcnaDate">Apr 12, 2026 – May 11, 2026</span>
+              </div>
+              <div class="edu-institution" data-i18n="certCcnaOrg">National Telecommunication Institute (NTI) — Digital Egypt Youth Program</div>
+              
+              <div class="edu-meta-badges">
+                <span class="score-badge">★ <span data-i18n="certScoreLabel">Score:</span> <span data-i18n="certCcnaScore">97% (Grade: Excellent)</span></span>
+                <span class="hours-badge">⏱ <span data-i18n="certCcnaHours">120 Hours Total (90 Tech + 30 Soft Skills)</span></span>
+              </div>
+
+              <p class="edu-description" data-i18n="certCcnaDesc">
+                Intensive hands-on training covering routing, switching, VLAN segmentation, IP connectivity, IP services, and network infrastructure security.
+              </p>
+
+              <div class="cert-card-actions">
+                <button class="btn-view-cert" onclick="openCertificateModal('nti-ccna')">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect width="18" height="18" x="3" y="3" rx="2" ry="2"></rect>
+                    <circle cx="9" cy="9" r="2"></circle>
+                    <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"></path>
+                  </svg>
+                  <span data-i18n="certBtnView">View Certificate</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Official Cert 2: Cloud Essentials (NTI - 90.5%) -->
+          <div class="edu-card">
+            <div class="edu-icon-badge">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"></path>
+                <path d="M12 12v9"></path>
+                <path d="m8 17 4 4 4-4"></path>
+              </svg>
+            </div>
+            <div class="edu-details">
+              <div class="edu-header">
+                <h3 class="edu-title" data-i18n="certCloudTitle">Cloud Essentials</h3>
+                <span class="edu-date-badge" data-i18n="certCloudDate">Aug 02, 2026 – Aug 27, 2026</span>
+              </div>
+              <div class="edu-institution" data-i18n="certCloudOrg">National Telecommunication Institute (NTI) & ITIDA</div>
+              
+              <div class="edu-meta-badges">
+                <span class="score-badge">★ <span data-i18n="certScoreLabel">Score:</span> <span data-i18n="certCloudScore">90.5% (Grade: Very Good)</span></span>
+                <span class="hours-badge">⏱ <span data-i18n="certCloudHours">120 Hours Total (90 Tech + 30 Soft Skills)</span></span>
+              </div>
+
+              <p class="edu-description" data-i18n="certCloudDesc">
+                Core principles of cloud architectures, cloud virtualization, service models (IaaS, PaaS, SaaS), cloud networking, and security governance.
+              </p>
+
+              <div class="cert-card-actions">
+                <button class="btn-view-cert" onclick="openCertificateModal('nti-cloud')">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect width="18" height="18" x="3" y="3" rx="2" ry="2"></rect>
+                    <circle cx="9" cy="9" r="2"></circle>
+                    <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"></path>
+                  </svg>
+                  <span data-i18n="certBtnView">View Certificate</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Official Cert 3: ITI Computer Network Fundamental (108 Hrs) -->
+          <div class="edu-card">
+            <div class="edu-icon-badge">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                <line x1="6" y1="18" x2="6.01" y2="18"></line>
+              </svg>
+            </div>
+            <div class="edu-details">
+              <div class="edu-header">
+                <h3 class="edu-title" data-i18n="certItiNetTitle">Computer Network Fundamental</h3>
+                <span class="edu-date-badge" data-i18n="certItiNetDate">Aug 16, 2025 – Sep 15, 2025</span>
+              </div>
+              <div class="edu-institution" data-i18n="certItiNetOrg">Information Technology Institute (ITI)</div>
+              
+              <div class="edu-meta-badges">
+                <span class="hours-badge" style="color: var(--accent-primary); border-color: var(--accent-primary);">⏱ <span data-i18n="certItiNetHours">108 Hours Total</span></span>
+              </div>
+
+              <p class="edu-description" data-i18n="certItiNetDesc">
+                Comprehensive technical training across core networking, system administration, cloud, databases, security, and scripting.
+              </p>
+
+              <!-- ITI Covered Modules Breakdown -->
+              <div class="modules-container">
+                <div class="modules-heading">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="9 11 12 14 22 4"></polyline>
+                    <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+                  </svg>
+                  <span data-i18n="certModulesLabel">Covered Modules:</span>
+                </div>
+                <div class="modules-tags-grid">
+                  <span class="module-pill" data-i18n="modNetFund">Computer Network Fundamentals (18 hrs)</span>
+                  <span class="module-pill" data-i18n="modCloudFund">Cloud Fundamental (12 hrs)</span>
+                  <span class="module-pill" data-i18n="modCyberFund">Cyber Security Fundamental (18 hrs)</span>
+                  <span class="module-pill" data-i18n="modLinux">Linux (24 hrs)</span>
+                  <span class="module-pill" data-i18n="modSql">SQL Database (18 hrs)</span>
+                  <span class="module-pill" data-i18n="modPython">Python (18 hrs)</span>
+                </div>
+              </div>
+
+              <div class="cert-card-actions">
+                <button class="btn-view-cert" onclick="openCertificateModal('iti-networks')">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect width="18" height="18" x="3" y="3" rx="2" ry="2"></rect>
+                    <circle cx="9" cy="9" r="2"></circle>
+                    <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"></path>
+                  </svg>
+                  <span data-i18n="certBtnView">View Certificate</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Academic Degree: Arish University -->
+          <div class="edu-card">
+            <div class="edu-icon-badge">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+              </svg>
+            </div>
+            <div class="edu-details">
+              <div class="edu-header">
+                <h3 class="edu-title" data-i18n="eduDegreeTitle">B.Sc. in Information Technology</h3>
+                <span class="edu-date-badge" data-i18n="eduDegreePeriod">Undergraduate</span>
+              </div>
+              <div class="edu-institution" data-i18n="eduUniversity">Arish University, Egypt</div>
+              <div class="coursework-box">
+                <span class="coursework-label" data-i18n="eduDegreeCourseworkLabel">Key Coursework:</span>
+                <span data-i18n="eduDegreeCoursework">Algorithms, Software Engineering, Web Programming, Artificial Intelligence</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Track: AWS Machine Learning Track (DEPI) -->
+          <div class="edu-card">
+            <div class="edu-icon-badge">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"></path>
+              </svg>
+            </div>
+            <div class="edu-details">
+              <div class="edu-header">
+                <h3 class="edu-title" data-i18n="certAwsTitle">AWS Machine Learning Track</h3>
+                <span class="edu-date-badge" data-i18n="certAwsDate">Started August 2026</span>
+              </div>
+              <div class="edu-institution" data-i18n="certAwsOrg">Digital Egypt Pioneers Initiative (DEPI) — Round 5</div>
+              <p class="edu-description" data-i18n="certAwsDesc">
+                Specialized training covering AWS cloud infrastructure, cloud-native machine learning pipelines, and cloud computing best practices.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         5. Featured Projects Section
+         ======================================================================= -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tag" data-i18n="projSectionTag">Portfolio Work</span>
+          <h2 class="section-title" data-i18n="projTitle">Featured Projects</h2>
+          <p class="section-subtitle" data-i18n="projSubtitle">
+            Practical implementations across networking, machine learning, and web development.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          
+          <!-- Project 1: CCNA Network Systems -->
+          <article class="project-card">
+            <div class="project-visual">
+              <div class="project-icon-large">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                  <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                  <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                  <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                </svg>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <div class="project-header">
+                <span class="project-category-badge" data-i18n="projBadgeAcademic">NTI Track</span>
+              </div>
+              <h3 class="project-title" data-i18n="proj1Title">Network Systems Implementation</h3>
+              <div class="project-subtitle" data-i18n="proj1Subtitle">Hands-on CCNA Network Topology & Configuration</div>
+              
+              <p class="project-description" data-i18n="proj1Desc">
+                Designed and implemented a resilient networking system as part of CCNA hands-on training with NTI, covering routing, switching, VLAN segmentation, and network security configuration.
+              </p>
+
+              <div class="project-tech-tags">
+                <span class="tech-tag">CCNA</span>
+                <span class="tech-tag">Routing & Switching</span>
+                <span class="tech-tag">Cisco IOS</span>
+                <span class="tech-tag">VLANs</span>
+                <span class="tech-tag">Subnetting</span>
+              </div>
+
+              <div class="project-footer">
+                <button class="btn btn-outline btn-sm" onclick="openProjectModal('proj1')">
+                  <span data-i18n="projBtnDetails">View Details</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="arrow-icon">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </button>
+
+                <a href="https://github.com/menahanoon512006-spec" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path>
+                  </svg>
+                  <span data-i18n="projBtnGithub">GitHub Repo</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: House Price Prediction (Verified Repo Link) -->
+          <article class="project-card">
+            <div class="project-visual">
+              <div class="project-icon-large">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                  <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                </svg>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <div class="project-header">
+                <span class="project-category-badge" data-i18n="projBadgeMl">Machine Learning</span>
+              </div>
+              <h3 class="project-title" data-i18n="proj2Title">House Price Prediction Model</h3>
+              <div class="project-subtitle" data-i18n="proj2Subtitle">End-to-End Machine Learning Regression Pipeline</div>
+              
+              <p class="project-description" data-i18n="proj2Desc">
+                Built an end-to-end machine learning model to predict residential house prices using Python, pandas, and scikit-learn for data wrangling, feature engineering, model training, and performance metrics evaluation.
+              </p>
+
+              <div class="project-tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">scikit-learn</span>
+                <span class="tech-tag">pandas</span>
+                <span class="tech-tag">NumPy</span>
+                <span class="tech-tag">Git</span>
+              </div>
+
+              <div class="project-footer">
+                <button class="btn btn-outline btn-sm" onclick="openProjectModal('proj2')">
+                  <span data-i18n="projBtnDetails">View Details</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="arrow-icon">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </button>
+
+                <a href="https://github.com/menahanoon512006-spec/house-project-prediction" target="_blank" rel="noopener" class="btn btn-secondary btn-sm" title="House Price Prediction GitHub Repository">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path>
+                  </svg>
+                  <span data-i18n="projBtnGithub">GitHub Repo</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Recipe Chatbot -->
+          <article class="project-card">
+            <div class="project-visual">
+              <div class="project-icon-large">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                </svg>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <div class="project-header">
+                <span class="project-category-badge" data-i18n="projBadgeWeb">Full-Stack Web</span>
+              </div>
+              <h3 class="project-title" data-i18n="proj3Title">Food Recipe Chatbot</h3>
+              <div class="project-subtitle" data-i18n="proj3Subtitle">AI-Powered Culinary Assistant with PHP API</div>
+              
+              <p class="project-description" data-i18n="proj3Desc">
+                Developed an intelligent chatbot assistant that accepts available user ingredients and recommends matching recipes, along with preparation duration, step-by-step cooking directions, and ingredient metrics.
+              </p>
+
+              <div class="project-tech-tags">
+                <span class="tech-tag">PHP API</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">REST API</span>
+                <span class="tech-tag">HTML5/CSS3</span>
+                <span class="tech-tag">JSON</span>
+              </div>
+
+              <div class="project-footer">
+                <button class="btn btn-outline btn-sm" onclick="openProjectModal('proj3')">
+                  <span data-i18n="projBtnDetails">View Details</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="arrow-icon">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </button>
+
+                <a href="https://github.com/menahanoon512006-spec" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path>
+                  </svg>
+                  <span data-i18n="projBtnGithub">GitHub Repo</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         6. Skills Matrix Section
+         ======================================================================= -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tag" data-i18n="skillsSectionTag">Technical Matrix</span>
+          <h2 class="section-title" data-i18n="skillsTitle">Skills & Proficiencies</h2>
+          <p class="section-subtitle" data-i18n="skillsSubtitle">
+            Technical tools, languages, and competencies accumulated through academic study and engineering tracks.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          
+          <!-- Category 1: Networking & Cloud -->
+          <div class="skill-category-card">
+            <div class="skill-card-header">
+              <div class="skill-header-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                  <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                  <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                  <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                </svg>
+              </div>
+              <h3 class="skill-card-title" data-i18n="skillCatNetworking">Networking & Cloud Infrastructure</h3>
+            </div>
+            <div class="skill-items-list">
+              <div class="skill-pill"><span class="skill-indicator"></span>CCNA Routing & Switching (97%)</div>
+              <div class="skill-pill"><span class="skill-indicator"></span>Cloud Essentials (90.5%)</div>
+              <div class="skill-pill"><span class="skill-indicator"></span>ITI Network Fundamentals (108h)</div>
+              <div class="skill-pill"><span class="skill-indicator"></span>AWS Machine Learning Services</div>
+              <div class="skill-pill"><span class="skill-indicator"></span>Linux Administration (24h)</div>
+              <div class="skill-pill"><span class="skill-indicator"></span>Cyber Security Fundamentals</div>
+              <div class="skill-pill"><span class="skill-indicator"></span>IP Subnetting & VLSM</div>
+              <div class="skill-pill"><span class="skill-indicator"></span>VLANs, Trunks & ACLs</div>
+              <div class="skill-pill"><span class="skill-indicator"></span>Cisco Packet Tracer</div>
+            </div>
+          </div>
+
+          <!-- Category 2: Machine Learning -->
+          <div class="skill-category-card">
+            <div class="skill-card-header">
+              <div class="skill-header-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2a4 4 0 0 1 4 4c0 1.95-1.4 3.58-3.25 3.93L15 15l4-2a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2l4 2 2.25-5.07A4.002 4.002 0 0 1 8 6a4 4 0 0 1 4-4z"></path>
+                </svg>
+              </div>
+              <h3 class="skill-card-title" data-i18n="skillCatMl">Machine Learning & Data Science</h3>
+            </div>
+            <div class="skill-items-list">
+              <div class="skill-pill"><span class="skill-indicator"></span>Python Programming (ITI & DEPI)</div>
+              <div class="skill-pill"><span class="skill-indicator"></span>pandas & NumPy</div>
+              <div class="skill-pill"><span class="skill-indicator"></span>scikit-learn</div>
+              <div class="skill-pill"><span class="skill-indicator"></span>Model Building & Tuning</div>
+              <div class="skill-pill"><span class="skill-indicator"></span>Data Preprocessing & EDA</div>
+              <div class="skill-pill"><span class="skill-indicator"></span>Regression & Classification</div>
+              <div class="skill-pill"><span class="skill-indicator"></span>Jupyter Notebooks</div>
+            </div>
+          </div>
+
+          <!-- Category 3: Web Development -->
+          <div class="skill-category-card">
+            <div class="skill-card-header">
+              <div class="skill-header-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <h3 class="skill-card-title" data-i18n="skillCatWeb">Web Development & APIs</h3>
+            </div>
+            <div class="skill-items-list">
+              <div class="skill-pill"><span class="skill-indicator"></span>PHP RESTful APIs</div>
+              <div class="skill-pill"><span class="skill-indicator"></span>SQL Databases (ITI 18h)</div>
+              <div class="skill-pill"><span class="skill-indicator"></span>Frontend Integration</div>
+              <div class="skill-pill"><span class="skill-indicator"></span>HTML5 Semantic Markup</div>
+              <div class="skill-pill"><span class="skill-indicator"></span>CSS3 Modern Layouts</div>
+              <div class="skill-pill"><span class="skill-indicator"></span>Vanilla JavaScript (ES6+)</div>
+              <div class="skill-pill"><span class="skill-indicator"></span>JSON Data Schemas</div>
+            </div>
+          </div>
+
+          <!-- Category 4: Tools & Foundations -->
+          <div class="skill-category-card">
+            <div class="skill-card-header">
+              <div class="skill-header-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="3"></circle>
+                  <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                </svg>
+              </div>
+              <h3 class="skill-card-title" data-i18n="skillCatTools">Tools, Systems & CS Foundations</h3>
+            </div>
+            <div class="skill-items-list">
+              <div class="skill-pill"><span class="skill-indicator"></span>Git Version Control</div>
+              <div class="skill-pill"><span class="skill-indicator"></span>GitHub Repositories</div>
+              <div class="skill-pill"><span class="skill-indicator"></span>Linux Shell & Utilities</div>
+              <div class="skill-pill"><span class="skill-indicator"></span>Algorithms & Complexity</div>
+              <div class="skill-pill"><span class="skill-indicator"></span>Software Engineering</div>
+              <div class="skill-pill"><span class="skill-indicator"></span>Web Programming</div>
+              <div class="skill-pill"><span class="skill-indicator"></span>Artificial Intelligence</div>
+            </div>
+          </div>
+
+          <!-- Category 5: Soft Skills & Languages -->
+          <div class="skill-category-card">
+            <div class="skill-card-header">
+              <div class="skill-header-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+              </div>
+              <h3 class="skill-card-title" data-i18n="skillCatSoft">Interpersonal Skills & Languages</h3>
+            </div>
+            <div class="skill-items-list">
+              <div class="skill-pill"><span class="skill-indicator"></span><span data-i18n="softSkill1">Teamwork & Collaboration</span></div>
+              <div class="skill-pill"><span class="skill-indicator"></span><span data-i18n="softSkill2">Time Management</span></div>
+              <div class="skill-pill"><span class="skill-indicator"></span><span data-i18n="softSkill3">Analytical Problem Solving</span></div>
+              <div class="skill-pill"><span class="skill-indicator"></span><span data-i18n="softSkill4">Continuous Technical Learning</span></div>
+              <div class="skill-pill"><span class="skill-indicator"></span><span data-i18n="langArabic">Arabic (Native Speaker)</span></div>
+              <div class="skill-pill"><span class="skill-indicator"></span><span data-i18n="langEnglish">English (Professional Working Proficiency)</span></div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         7. Contact Section
+         ======================================================================= -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tag" data-i18n="contactSectionTag">Let's Connect</span>
+          <h2 class="section-title" data-i18n="contactTitle">Get In Touch</h2>
+          <p class="section-subtitle" data-i18n="contactSubtitle">
+            Interested in discussing DevOps opportunities, collaboration, or technical roles? Feel free to reach out directly.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Contact Detail Cards -->
+          <div class="contact-info-cards">
+            
+            <!-- Email Card -->
+            <div class="contact-card">
+              <div class="contact-card-main">
+                <div class="contact-card-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div class="contact-card-meta">
+                  <span class="contact-card-label" data-i18n="contactEmailLabel">Email Address</span>
+                  <a href="mailto:menahanoon512006@gmail.com" class="contact-card-val">menahanoon512006@gmail.com</a>
+                </div>
+              </div>
+              <button class="copy-btn" onclick="copyToClipboard('menahanoon512006@gmail.com')" data-i18n="contactCopyBtn">Copy</button>
+            </div>
+
+            <!-- Phone Card -->
+            <div class="contact-card">
+              <div class="contact-card-main">
+                <div class="contact-card-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                </div>
+                <div class="contact-card-meta">
+                  <span class="contact-card-label" data-i18n="contactPhoneLabel">Phone Number</span>
+                  <a href="tel:01205963008" class="contact-card-val">01205963008</a>
+                </div>
+              </div>
+              <button class="copy-btn" onclick="copyToClipboard('01205963008')" data-i18n="contactCopyBtn">Copy</button>
+            </div>
+
+            <!-- Location Card -->
+            <div class="contact-card">
+              <div class="contact-card-main">
+                <div class="contact-card-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div class="contact-card-meta">
+                  <span class="contact-card-label" data-i18n="contactLocationLabel">Location</span>
+                  <span class="contact-card-val" data-i18n="heroLocation">Egypt</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- LinkedIn Card (Verified Link) -->
+            <div class="contact-card">
+              <div class="contact-card-main">
+                <div class="contact-card-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"></path>
+                  </svg>
+                </div>
+                <div class="contact-card-meta">
+                  <span class="contact-card-label" data-i18n="contactLinkedInLabel">LinkedIn Profile</span>
+                  <a href="https://www.linkedin.com/in/menna-elsayed-434aa135b" target="_blank" rel="noopener" class="contact-card-val">menna-elsayed-434aa135b</a>
+                </div>
+              </div>
+              <a href="https://www.linkedin.com/in/menna-elsayed-434aa135b" target="_blank" rel="noopener" class="copy-btn">↗</a>
+            </div>
+
+            <!-- GitHub Card (Verified Link) -->
+            <div class="contact-card">
+              <div class="contact-card-main">
+                <div class="contact-card-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path>
+                  </svg>
+                </div>
+                <div class="contact-card-meta">
+                  <span class="contact-card-label" data-i18n="contactGithubLabel">GitHub Profile</span>
+                  <a href="https://github.com/menahanoon512006-spec" target="_blank" rel="noopener" class="contact-card-val">menahanoon512006-spec</a>
+                </div>
+              </div>
+              <a href="https://github.com/menahanoon512006-spec" target="_blank" rel="noopener" class="copy-btn">↗</a>
+            </div>
+
+          </div>
+
+          <!-- Quick Message Interactive Form -->
+          <div class="contact-form-container">
+            <h3 class="contact-form-title" data-i18n="contactFormTitle">Send a Quick Message</h3>
+            
+            <form id="contact-form">
+              <div class="form-group">
+                <label for="contact-name" class="form-label" data-i18n="contactFormName">Your Name</label>
+                <input type="text" id="contact-name" class="form-control" required placeholder="John Doe" data-i18n-placeholder="contactFormName">
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email" class="form-label" data-i18n="contactFormEmail">Your Email</label>
+                <input type="email" id="contact-email" class="form-control" required placeholder="john@example.com" data-i18n-placeholder="contactFormEmail">
+              </div>
+
+              <div class="form-group">
+                <label for="contact-subject" class="form-label" data-i18n="contactFormSubject">Subject</label>
+                <input type="text" id="contact-subject" class="form-control" required placeholder="DevOps Opportunity" data-i18n-placeholder="contactFormSubject">
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message" class="form-label" data-i18n="contactFormMessage">Message</label>
+                <textarea id="contact-message" class="form-control" rows="4" required placeholder="Hi Menna, let's discuss..." data-i18n-placeholder="contactFormMessage"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                <span data-i18n="contactFormSubmit">Send Message</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="arrow-icon">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================================
+       8. Footer Section
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h2 data-i18n="navLogo">Menna El-Sayed</h2>
+          <p data-i18n="footerTagline">Aspiring DevOps Engineer • Merging Cloud, Networking, and Automation</p>
+        </div>
+        
+        <div style="display: flex; gap: 0.85rem; align-items: center;">
+          <a href="https://github.com/menahanoon512006-spec" target="_blank" rel="noopener" class="nav-social-btn" title="GitHub Profile" aria-label="GitHub Profile">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path>
+            </svg>
+          </a>
+
+          <a href="https://www.linkedin.com/in/menna-elsayed-434aa135b" target="_blank" rel="noopener" class="nav-social-btn" title="LinkedIn Profile" aria-label="LinkedIn Profile">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"></path>
+            </svg>
+          </a>
+
+          <a href="assets/cv/Menna_Allah_ElSayed_CV.html" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            <span data-i18n="cvDownloadPrompt">Open / Print Complete CV</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span data-i18n="footerCopyright">© 2026 Menna Allah El-Sayed. All rights reserved.</span>
+        <span data-i18n="footerBuiltWith">Crafted with pure HTML5, CSS3 & Vanilla JavaScript</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       9. Project Deep-Dive Modal Dialog
+       ========================================================================= -->
+  <div class="modal-overlay" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-project-title">
+    <div class="modal-container">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close Modal Dialog">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <div class="modal-category" id="modal-project-category">Project Category</div>
+      <h3 class="modal-title" id="modal-project-title">Project Title</h3>
+      <div class="modal-subtitle" id="modal-project-subtitle">Project Subtitle</div>
+
+      <p class="modal-overview-text" id="modal-project-overview">Overview</p>
+
+      <h4 class="modal-section-title" data-i18n="modalKeyTakeaways">Key Achievements & Details</h4>
+      <ul class="modal-highlights-list" id="modal-project-highlights"></ul>
+
+      <h4 class="modal-section-title" data-i18n="modalTechStack">Technologies Used</h4>
+      <div class="modal-tech-list" id="modal-project-tech"></div>
+
+      <div class="modal-actions">
+        <a href="https://github.com/menahanoon512006-spec" target="_blank" rel="noopener" class="btn btn-primary btn-sm" id="modal-project-repo">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path>
+          </svg>
+          <span data-i18n="modalSourceCode">GitHub Repository</span>
+        </a>
+
+        <button class="btn btn-secondary btn-sm" onclick="closeProjectModal()" data-i18n="modalClose">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       10. Certificate Lightbox Modal Dialog (New Interactive Viewer)
+       ========================================================================= -->
+  <div class="modal-overlay" id="cert-modal" role="dialog" aria-modal="true" aria-labelledby="cert-modal-title">
+    <div class="cert-modal-container">
+      <div class="cert-modal-header">
+        <div class="cert-modal-header-meta">
+          <h3 id="cert-modal-title" data-i18n="modalCertHeading">Official Certificate Viewer</h3>
+          <p><span id="cert-modal-issuer">Issuer</span> • <span id="cert-modal-date">Date</span></p>
+        </div>
+        <button class="modal-close-btn" id="cert-modal-close-btn" aria-label="Close Certificate Dialog">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <div class="cert-modal-body">
+        <div class="cert-image-frame">
+          <img src="" alt="Certificate Preview" id="cert-modal-img" class="cert-modal-img">
+        </div>
+      </div>
+
+      <div class="cert-modal-footer">
+        <div class="cert-modal-details">
+          <div class="score-badge" id="cert-modal-badge" style="margin-bottom: 0.5rem; display: inline-flex;">Score / Hours</div>
+          <p id="cert-modal-desc"></p>
+        </div>
+        <div class="cert-modal-actions">
+          <a href="" target="_blank" rel="noopener" class="btn btn-outline btn-sm" id="cert-modal-open-full">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+            <span data-i18n="modalCertOpenFull">Open Full Resolution</span>
+          </a>
+          <button class="btn btn-secondary btn-sm" onclick="closeCertificateModal()" data-i18n="modalClose">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       11. Toast Notification Container
+       ========================================================================= -->
+  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+  <!-- =========================================================================
+       12. Scripts (Pure Vanilla ES6+)
+       ========================================================================= -->
+  <script src="js/translations.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+</html>

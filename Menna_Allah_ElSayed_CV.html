@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menna Allah El-Sayed - Curriculum Vitae</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #1e293b;
+      --accent: #4f46e5;
+      --secondary: #475569;
+      --muted: #64748b;
+      --border: #e2e8f0;
+      --bg: #f8fafc;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--primary);
+      line-height: 1.55;
+      padding: 2rem 1rem;
+    }
+
+    .cv-container {
+      max-width: 820px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 3rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      border: 1px solid var(--border);
+    }
+
+    .cv-actions {
+      max-width: 820px;
+      margin: 0 auto 1.5rem auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.6rem 1.25rem;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      text-decoration: none;
+      cursor: pointer;
+      border: none;
+    }
+
+    .btn-print {
+      background: var(--accent);
+      color: #ffffff;
+    }
+
+    .btn-back {
+      background: #ffffff;
+      color: var(--secondary);
+      border: 1px solid var(--border);
+    }
+
+    .btn:hover {
+      opacity: 0.9;
+    }
+
+    .cv-header {
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 1.5rem;
+      margin-bottom: 1.75rem;
+    }
+
+    .cv-name {
+      font-size: 2.1rem;
+      font-weight: 800;
+      color: var(--primary);
+      margin-bottom: 0.25rem;
+    }
+
+    .cv-title {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: 0.75rem;
+    }
+
+    .cv-contacts {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.25rem;
+      font-size: 0.88rem;
+      color: var(--secondary);
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+
+    .contact-item a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .contact-item a:hover {
+      color: var(--accent);
+    }
+
+    .cv-section {
+      margin-bottom: 1.75rem;
+    }
+
+    .cv-section-title {
+      font-size: 1.15rem;
+      font-weight: 750;
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      border-bottom: 1.5px solid var(--border);
+      padding-bottom: 0.4rem;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .cv-summary {
+      font-size: 0.92rem;
+      color: var(--secondary);
+      line-height: 1.65;
+    }
+
+    .cv-item {
+      margin-bottom: 1.25rem;
+    }
+
+    .cv-item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 0.25rem;
+    }
+
+    .cv-item-title {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    .cv-item-date {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--muted);
+    }
+
+    .cv-item-sub {
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--accent);
+      margin-bottom: 0.35rem;
+    }
+
+    .cv-badge {
+      display: inline-block;
+      padding: 0.15rem 0.55rem;
+      background: #ecfdf5;
+      color: #059669;
+      border: 1px solid #a7f3d0;
+      border-radius: 9999px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      margin-left: 0.5rem;
+    }
+
+    .cv-item-desc {
+      font-size: 0.88rem;
+      color: var(--secondary);
+      line-height: 1.55;
+    }
+
+    .cv-bullets {
+      margin-left: 1.25rem;
+      margin-top: 0.35rem;
+    }
+
+    .cv-bullets li {
+      font-size: 0.88rem;
+      color: var(--secondary);
+      margin-bottom: 0.25rem;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.85rem;
+    }
+
+    .skill-category {
+      font-size: 0.88rem;
+    }
+
+    .skill-cat-name {
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    @media print {
+      body {
+        background: #ffffff;
+        padding: 0;
+      }
+      .cv-actions {
+        display: none;
+      }
+      .cv-container {
+        box-shadow: none;
+        border: none;
+        padding: 0;
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="cv-actions">
+    <a href="../../index.html" class="btn btn-back">← Back to Portfolio</a>
+    <button onclick="window.print()" class="btn btn-print">🖨️ Print / Save as PDF</button>
+  </div>
+
+  <main class="cv-container">
+    <header class="cv-header">
+      <h1 class="cv-name">Menna Allah El-Sayed Abd El-Salam</h1>
+      <div class="cv-title">Aspiring DevOps Engineer</div>
+      <div class="cv-contacts">
+        <div class="contact-item">📍 Egypt</div>
+        <div class="contact-item">✉️ <a href="mailto:menahanoon512006@gmail.com">menahanoon512006@gmail.com</a></div>
+        <div class="contact-item">📞 01205963008</div>
+        <div class="contact-item">🔗 <a href="https://github.com/menahanoon512006-spec" target="_blank" rel="noopener">github.com/menahanoon512006-spec</a></div>
+        <div class="contact-item">💼 <a href="https://www.linkedin.com/in/menna-elsayed-434aa135b" target="_blank" rel="noopener">linkedin.com/in/menna-elsayed-434aa135b</a></div>
+      </div>
+    </header>
+
+    <section class="cv-section">
+      <h2 class="cv-section-title">Profile Summary</h2>
+      <p class="cv-summary">
+        Information Technology student with a strong foundation in networking, cloud computing, and machine learning, gained through certified hands-on training with NTI, DEPI, and ITI. Certified in CCNA - Routing and Switching (Score: 97%), Cloud Essentials (Score: 90.5%), and Computer Network Fundamentals (108 Hours). Actively building cloud infrastructure and DevOps automation skills, combining networking topologies, Linux systems, CI/CD pipelines, and cloud engineering.
+      </p>
+    </section>
+
+    <section class="cv-section">
+      <h2 class="cv-section-title">Education</h2>
+      <div class="cv-item">
+        <div class="cv-item-header">
+          <div class="cv-item-title">B.Sc. in Information Technology</div>
+          <div class="cv-item-date">Undergraduate</div>
+        </div>
+        <div class="cv-item-sub">Arish University, Egypt</div>
+        <div class="cv-item-desc">
+          <strong>Relevant Coursework:</strong> Algorithms, Software Engineering, Web Programming, Artificial Intelligence.
+        </div>
+      </div>
+    </section>
+
+    <section class="cv-section">
+      <h2 class="cv-section-title">Official Certifications & Training</h2>
+      
+      <!-- CCNA -->
+      <div class="cv-item">
+        <div class="cv-item-header">
+          <div class="cv-item-title">CCNA - Routing and Switching <span class="cv-badge">Score: 97%</span></div>
+          <div class="cv-item-date">Apr 12, 2026 – May 11, 2026</div>
+        </div>
+        <div class="cv-item-sub">National Telecommunication Institute (NTI) — Digital Egypt Youth Program</div>
+        <div class="cv-item-desc">
+          120 Total Hours (90 Technical Hours + 30 Soft Skills Hours). Intensive hands-on training covering Cisco routing, switching, VLAN segmentation, IP connectivity, IP services, and network infrastructure security.
+        </div>
+      </div>
+
+      <!-- Cloud Essentials -->
+      <div class="cv-item">
+        <div class="cv-item-header">
+          <div class="cv-item-title">Cloud Essentials <span class="cv-badge">Score: 90.5%</span></div>
+          <div class="cv-item-date">Aug 02, 2026 – Aug 27, 2026</div>
+        </div>
+        <div class="cv-item-sub">National Telecommunication Institute (NTI) & ITIDA</div>
+        <div class="cv-item-desc">
+          120 Total Hours (90 Technical Hours + 30 Soft Skills Hours). Accredited training covering cloud virtualization, cloud architecture patterns, IaaS/PaaS/SaaS delivery models, and security governance.
+        </div>
+      </div>
+
+      <!-- ITI Networks -->
+      <div class="cv-item">
+        <div class="cv-item-header">
+          <div class="cv-item-title">Computer Network Fundamental <span class="cv-badge">108 Hours Total</span></div>
+          <div class="cv-item-date">Aug 16, 2025 – Sep 15, 2025</div>
+        </div>
+        <div class="cv-item-sub">Information Technology Institute (ITI)</div>
+        <div class="cv-item-desc">
+          Comprehensive technical track covering: Computer Network Fundamentals (18 hrs), Cloud Fundamental (12 hrs), Cyber Security Fundamental (18 hrs), Linux (24 hrs), SQL Database (18 hrs), and Python (18 hrs).
+        </div>
+      </div>
+
+      <!-- DEPI AWS ML -->
+      <div class="cv-item">
+        <div class="cv-item-header">
+          <div class="cv-item-title">AWS Machine Learning Track — Round 5</div>
+          <div class="cv-item-date">Started August 2026</div>
+        </div>
+        <div class="cv-item-sub">Digital Egypt Pioneers Initiative (DEPI)</div>
+        <div class="cv-item-desc">
+          Specialized cloud training covering AWS cloud infrastructure, cloud-native machine learning pipelines, and deployment practices.
+        </div>
+      </div>
+    </section>
+
+    <section class="cv-section">
+      <h2 class="cv-section-title">Technical Projects</h2>
+
+      <div class="cv-item">
+        <div class="cv-item-header">
+          <div class="cv-item-title">Network Systems Implementation</div>
+          <div class="cv-item-date">NTI — CCNA Track</div>
+        </div>
+        <ul class="cv-bullets">
+          <li>Designed and implemented a complete enterprise networking topology with Cisco IOS.</li>
+          <li>Configured dynamic routing, switching, VLAN segmentation, ACLs, and network security protocols.</li>
+        </ul>
+      </div>
+
+      <div class="cv-item">
+        <div class="cv-item-header">
+          <div class="cv-item-title">House Price Prediction — Machine Learning</div>
+          <div class="cv-item-date"><a href="https://github.com/menahanoon512006-spec/house-project-prediction" target="_blank" rel="noopener">GitHub Repo ↗</a></div>
+        </div>
+        <ul class="cv-bullets">
+          <li>Constructed an end-to-end regression pipeline predicting residential property prices with Python, pandas, and scikit-learn.</li>
+          <li>Handled exploratory data analysis, feature scaling, algorithmic model comparisons, and version control on GitHub.</li>
+        </ul>
+      </div>
+
+      <div class="cv-item">
+        <div class="cv-item-header">
+          <div class="cv-item-title">Food Recipe Chatbot</div>
+          <div class="cv-item-date">Personal Project</div>
+        </div>
+        <ul class="cv-bullets">
+          <li>Developed a culinary chatbot assistant that suggests matching recipes based on available user ingredients.</li>
+          <li>Built the backend with a PHP REST API and connected it seamlessly to a responsive web frontend.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="cv-section">
+      <h2 class="cv-section-title">Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <span class="skill-cat-name">Networking:</span> CCNA fundamentals (97%), routing & switching, subnetting, VLANs, ACLs
+        </div>
+        <div class="skill-category">
+          <span class="skill-cat-name">Cloud & DevOps:</span> AWS (ML services), Cloud Essentials (90.5%), Linux (24h), CI/CD concepts
+        </div>
+        <div class="skill-category">
+          <span class="skill-cat-name">Machine Learning:</span> Python, pandas, scikit-learn (regression & classification)
+        </div>
+        <div class="skill-category">
+          <span class="skill-cat-name">Web & DB:</span> PHP REST APIs, SQL Databases (18h), HTML5, CSS3, JavaScript (ES6+)
+        </div>
+        <div class="skill-category">
+          <span class="skill-cat-name">Tools & CS:</span> Git & GitHub, Linux utilities, Algorithms, Software Engineering
+        </div>
+        <div class="skill-category">
+          <span class="skill-cat-name">Soft Skills & Languages:</span> Teamwork, Time Management • Arabic (Native), English (Professional)
+        </div>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>
