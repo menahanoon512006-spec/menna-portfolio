@@ -63,3 +63,18 @@
   direction: ltr;
   text-align: right;
 }
+
+/* RTL Project Card Highlights & Specs */
+[dir="rtl"] .project-highlights-preview li {
+  text-align: right;
+}
+
+[dir="rtl"] .project-quick-specs {
+  font-family: var(--font-arabic);
+}
+
+[dir="rtl"] .project-zoom-badge,
+[dir="rtl"] .project-visual-badge {
+  font-family: var(--font-arabic);
+  letter-spacing: normal;
+}

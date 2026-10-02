@@ -122,6 +122,8 @@ const translations = {
     projSubtitle: "Practical implementations across networking, machine learning, and web development.",
     projBtnGithub: "GitHub Repo",
     projBtnDetails: "View Details",
+    projBtnPreview: "Preview & Specs",
+    projBtnLiveDemo: "Live Demo",
     projBadgeAcademic: "NTI Track",
     projBadgePersonal: "Personal Project",
     projBadgeMl: "Machine Learning",
@@ -130,17 +132,32 @@ const translations = {
     // Project 1
     proj1Title: "Network Systems Implementation",
     proj1Subtitle: "Hands-on CCNA Network Topology & Configuration",
+    proj1Status: "CCNA Practical Track",
+    proj1Specs: "Enterprise Topology • Cisco IOS • VLSM",
     proj1Desc: "Designed and implemented a resilient networking system as part of CCNA hands-on training with NTI, covering routing, switching, VLAN segmentation, and network security configuration.",
+    proj1Feat1: "Multi-VLAN segmentation & 802.1Q trunking with Inter-VLAN routing",
+    proj1Feat2: "Configured Cisco routers & switches with OSPF dynamic routing & ACLs",
+    proj1Feat3: "Simulated enterprise infrastructure topology in Cisco Packet Tracer",
     
     // Project 2
     proj2Title: "House Price Prediction Model",
     proj2Subtitle: "End-to-End Machine Learning Regression Pipeline",
+    proj2Status: "End-to-End ML Pipeline",
+    proj2Specs: "Regression Pipeline • Scikit-Learn • R² 0.894",
     proj2Desc: "Built an end-to-end machine learning model to predict residential house prices using Python, pandas, and scikit-learn for data wrangling, feature engineering, model training, and performance metrics evaluation.",
+    proj2Feat1: "End-to-end regression model with data preprocessing & scaling",
+    proj2Feat2: "In-depth EDA, correlation heatmaps & feature importance analysis",
+    proj2Feat3: "Achieved 89.4% prediction accuracy (R²) with minimized RMSE",
 
     // Project 3
-    proj3Title: "Food Recipe Chatbot",
+    proj3Title: "Food Recipe Chatbot (ChefBot)",
     proj3Subtitle: "AI-Powered Culinary Assistant with PHP API",
+    proj3Status: "Live Deployed Web App",
+    proj3Specs: "PHP RESTful API • Vanilla JS • InfinityFree",
     proj3Desc: "Developed an intelligent chatbot assistant that accepts available user ingredients and recommends matching recipes, along with preparation duration, step-by-step cooking directions, and ingredient metrics.",
+    proj3Feat1: "Ingredient-matching algorithm providing instant recipe recommendations",
+    proj3Feat2: "Lightweight PHP backend delivering structured JSON recipe payloads",
+    proj3Feat3: "Fully deployed live web app with responsive UI & step-by-step guides",
 
     // Skills Section
     skillsSectionTag: "Technical Matrix",
@@ -329,6 +346,8 @@ const translations = {
     projSubtitle: "مشاريع عملية تطبيقية في مجالات الشبكات، تعلم الآلة، وتطوير تطبيقات الويب.",
     projBtnGithub: "مستودع GitHub",
     projBtnDetails: "التفاصيل الكاملة",
+    projBtnPreview: "معاينة ومواصفات",
+    projBtnLiveDemo: "معاينة حية (Live Demo)",
     projBadgeAcademic: "مشروع NTI",
     projBadgePersonal: "مشروع شخصي",
     projBadgeMl: "تعلم آلة",
@@ -337,17 +356,32 @@ const translations = {
     // Project 1
     proj1Title: "تنفيذ وتكوين أنظمة الشبكات",
     proj1Subtitle: "تصميم طوبولوجيا الشبكات وتكوين الراوترات والمحولات (CCNA)",
+    proj1Status: "مسار عملي معتمد CCNA",
+    proj1Specs: "طوبولوجيا شبكات مؤسسية • Cisco IOS • تقسيم VLSM",
     proj1Desc: "تصميم وتنفيذ نظام شبكات متكامل كجزء من التدريب العملي لمسار CCNA في معهد NTI، يغطي التوجيه، التبديل، تقسيم الشبكات الافتراضية VLANs، وتكوين أمن الشبكات.",
+    proj1Feat1: "تقسيم الشبكات الافتراضية VLANs وربط 802.1Q مع التوجيه المتعدد",
+    proj1Feat2: "تكوين راوترات ومفاتيح سيسكو ببروتوكول OSPF وقوائم حماية ACL",
+    proj1Feat3: "محاكاة واختبار طوبولوجيا مؤسسية متكاملة عبر Cisco Packet Tracer",
 
     // Project 2
     proj2Title: "نموذج التنبؤ بأسعار المنازل",
     proj2Subtitle: "بناء مسار تعلم آلة انحداري متكامل (Regression Pipeline)",
+    proj2Status: "مسار تعلم آلة متكامل",
+    proj2Specs: "نموذج انحدار • بايثون و Scikit-Learn • دقة 89.4%",
     proj2Desc: "تطوير نموذج تعلم آلة متكامل للتنبؤ بأسعار العقارات السكنية باستخدام لغة بايثون ومكتبات pandas و scikit-learn لمعالجة وتجهيز البيانات وتدريب وتقييم النموذج.",
+    proj2Feat1: "بناء مسار انحدار متكامل يشمل تنظيف البيانات وهندسة الخصائص",
+    proj2Feat2: "تحليل استكشافي شامل للبيانات ومصفوفات ارتباط الخصائص الرئيسية",
+    proj2Feat3: "تحقيق دقة تنبؤ عالية بمعامل تحديد R² بلغ 0.894 وتقييم معايير الخطأ",
 
     // Project 3
-    proj3Title: "روبوت المحادثة لوصفات الطعام (Recipe Chatbot)",
+    proj3Title: "روبوت المحادثة لوصفات الطعام (ChefBot)",
     proj3Subtitle: "مساعد طهي ذكي مع واجهة برمجية بلغة PHP",
+    proj3Status: "تطبيق ويب منشور ومباشر",
+    proj3Specs: "واجهة برمجية PHP REST • جافاسكريبت نقية • استضافة حية",
     proj3Desc: "تطوير روبوت محادثة تفاعلي يستقبل المكونات المتوفرة لدى المستخدم ويقترح الوجبات المتطابقة معها متضمنة تفاصيل التحضير والوقت المقدر وخطوات الطهي.",
+    proj3Feat1: "محرك اقتراح ذكي للوجبات يطابق المكونات الغذائية المتوفرة للمستخدم",
+    proj3Feat2: "واجهة خلفية RESTful بلغة PHP خفيفة مع مخططات بيانات JSON سريعة",
+    proj3Feat3: "تطبيق ويب حي منشور بالكامل يوفر واجهة تفاعلية وخطوات إعداد دقيقة",
 
     // Skills Section
     skillsSectionTag: "المصفوفة التقنية",
@@ -422,6 +456,7 @@ const translations = {
 // Project Deep-Dive Details for Modal
 const projectDetails = {
   proj1: {
+    image: "assets/projects/ccna-network.jpg",
     en: {
       title: "Network Systems Implementation",
       subtitle: "National Telecommunication Institute (NTI) — CCNA Track",
@@ -454,6 +489,7 @@ const projectDetails = {
     }
   },
   proj2: {
+    image: "assets/projects/house-prediction.jpg",
     en: {
       title: "House Price Prediction Model",
       subtitle: "Supervised Machine Learning Regression Pipeline",
@@ -484,6 +520,13 @@ const projectDetails = {
     }
   },
   proj3: {
+    image: "assets/projects/recipe-chatbot.jpg",
+    liveUrl: "https://chefbot.infinityfree.me",
+    gallery: [
+      { src: "assets/projects/recipe-chatbot.jpg", label: "Robot Chef Assistant UI" },
+      { src: "assets/projects/chefbot-mobile.jpg", label: "Personalized Welcome Screen" },
+      { src: "assets/projects/chefbot-recipes.jpg", label: "Recipe Catalog & Meal Planner" }
+    ],
     en: {
       title: "Food Recipe Chatbot",
       subtitle: "Interactive Culinary Recommender with PHP Backend API",

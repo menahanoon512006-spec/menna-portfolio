@@ -49,13 +49,11 @@ document.addEventListener("DOMContentLoaded", () => {
     htmlRoot.setAttribute("data-theme", theme);
     localStorage.setItem(STORAGE_KEYS.THEME, theme);
 
-    // Update Theme Meta Color for mobile status bars
     const metaThemeColor = document.querySelector('meta[name="theme-color"]');
     if (metaThemeColor) {
       metaThemeColor.setAttribute("content", theme === "dark" ? "#0b0f19" : "#ffffff");
     }
 
-    // Update Theme Button ARIA label
     if (themeToggleBtn) {
       const label = theme === "dark" 
         ? (currentLang === "ar" ? "التبديل إلى الوضع الفاتح" : "Switch to Light Mode")
@@ -81,7 +79,6 @@ document.addEventListener("DOMContentLoaded", () => {
     htmlRoot.setAttribute("dir", lang === "ar" ? "rtl" : "ltr");
     localStorage.setItem(STORAGE_KEYS.LANG, lang);
 
-    // Update Language Button label
     if (langToggleBtn) {
       const btnTextSpan = langToggleBtn.querySelector(".lang-label");
       if (btnTextSpan) {
@@ -92,10 +89,8 @@ document.addEventListener("DOMContentLoaded", () => {
       langToggleBtn.setAttribute("title", ariaLabel);
     }
 
-    // Refresh Theme Button Label in active language
     applyTheme(currentTheme);
 
-    // Translate all standard text nodes with data-i18n attribute
     const transMap = (typeof translations !== "undefined" && translations[lang]) ? translations[lang] : {};
     
     document.querySelectorAll("[data-i18n]").forEach(elem => {
@@ -105,7 +100,6 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
 
-    // Translate placeholders
     document.querySelectorAll("[data-i18n-placeholder]").forEach(elem => {
       const key = elem.getAttribute("data-i18n-placeholder");
       if (transMap[key]) {
@@ -113,7 +107,6 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
 
-    // Translate element titles / aria-labels
     document.querySelectorAll("[data-i18n-aria]").forEach(elem => {
       const key = elem.getAttribute("data-i18n-aria");
       if (transMap[key]) {
@@ -139,7 +132,6 @@ document.addEventListener("DOMContentLoaded", () => {
       mobileMenuBtn.setAttribute("aria-expanded", isOpen ? "true" : "false");
     });
 
-    // Close mobile menu when a nav link is clicked
     navLinks.forEach(link => {
       link.addEventListener("click", () => {
         navLinksContainer.classList.remove("mobile-open");
@@ -147,7 +139,6 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
 
-    // Close when clicking outside of nav
     document.addEventListener("click", (e) => {
       if (!navLinksContainer.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
         navLinksContainer.classList.remove("mobile-open");
@@ -191,7 +182,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const data = projectDetails[projectId][currentLang] || projectDetails[projectId]["en"];
     if (!data) return;
 
-    // Populate Modal Content
     const catElem = document.getElementById("modal-project-category");
     const titleElem = document.getElementById("modal-project-title");
     const subElem = document.getElementById("modal-project-subtitle");
@@ -199,6 +189,54 @@ document.addEventListener("DOMContentLoaded", () => {
     const highlightsList = document.getElementById("modal-project-highlights");
     const techList = document.getElementById("modal-project-tech");
     const repoBtn = document.getElementById("modal-project-repo");
+    const imgElem = document.getElementById("modal-project-img");
+    const liveBtn = document.getElementById("modal-project-live");
+
+    if (imgElem) {
+      const imgSrc = projectDetails[projectId].image;
+      if (imgSrc) {
+        imgElem.src = imgSrc;
+        imgElem.alt = data.title;
+        imgElem.style.display = "block";
+      } else {
+        imgElem.style.display = "none";
+      }
+    }
+
+    if (liveBtn) {
+      const liveUrl = projectDetails[projectId].liveUrl || data.liveUrl;
+      if (liveUrl) {
+        liveBtn.href = liveUrl;
+        liveBtn.style.display = "inline-flex";
+      } else {
+        liveBtn.style.display = "none";
+      }
+    }
+
+    const galleryContainer = document.getElementById("modal-project-gallery");
+    if (galleryContainer) {
+      galleryContainer.innerHTML = "";
+      const gallery = projectDetails[projectId].gallery;
+      if (gallery && gallery.length > 1) {
+        galleryContainer.style.display = "flex";
+        gallery.forEach((item, idx) => {
+          const thumb = document.createElement("button");
+          thumb.className = `modal-gallery-thumb ${idx === 0 ? "active" : ""}`;
+          thumb.setAttribute("type", "button");
+          thumb.setAttribute("aria-label", item.label || "Project image");
+          thumb.title = item.label || "Project image";
+          thumb.innerHTML = `<img src="${item.src}" alt="${item.label || ''}">`;
+          thumb.addEventListener("click", () => {
+            if (imgElem) imgElem.src = item.src;
+            galleryContainer.querySelectorAll(".modal-gallery-thumb").forEach(t => t.classList.remove("active"));
+            thumb.classList.add("active");
+          });
+          galleryContainer.appendChild(thumb);
+        });
+      } else {
+        galleryContainer.style.display = "none";
+      }
+    }
 
     if (catElem) catElem.textContent = data.category;
     if (titleElem) titleElem.textContent = data.title;
@@ -228,7 +266,6 @@ document.addEventListener("DOMContentLoaded", () => {
       repoBtn.href = data.githubUrl || "https://github.com/menahanoon512006-spec";
     }
 
-    // Open Modal
     projectDetailModal.classList.add("active");
     document.body.style.overflow = "hidden";
     if (modalCloseBtn) modalCloseBtn.focus();
